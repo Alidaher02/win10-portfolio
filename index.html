@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="http://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body  id="desktop"  class="h-screen w-full bg-cover bg-center relative" style="background-image: url(./img/win10.0.jpg);">
+    <div class="fixed bottom-0   w-full ">
+      <div class="bg-[#1A1A1A] w-full h-10 bg-opacity-70 flex items-center ">
+      <div class="flex  items-center h-full gap-4 ">
+        <div class="flex items-center h-full">
+          <div id="Windowsbtn" class="h-full w-12 px-2 hover:bg-white">
+            <img  class=" hover:bg-white h-full" src="./img/windowsIcon.svg" alt="">
+          </div>
+          <div class="h-full relative">
+            <input class="h-full w-[288px] bg-gray-200 placeholder-gray-900 text-sm px-12" placeholder="Type here to search" type="text">
+            <div class="absolute left-0 top-0 py-2 px-5">
+             <span class="text-black"><i class="fa-solid fa-magnifying-glass fa-rotate-90"></i></span>
+            </div>
+            <div class="absolute top-0   right-0">
+              <img class="w-24" src="./img/Spacious Mountain Reflected in Tranquil Lake.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center gap-7">
+        <img class="w-6" src="./img/folder.png" alt="">
+        <img class="w-6" src="./img/chrome.png" alt="">
+        <img class="w-6" src="./img/vs.png" alt="">
+        <img class="w-6" src="./img/fortnite.png" alt="">
+        </div>
+      </div>
+      </div>
+    </div>
+    <div  class="py-5 px-3 flex flex-col gap-2 ">
+      <div id="recycle-bin" class="w-24 h-24 flex items-center justify-center">
+        <div class="flex flex-col gap-1 text-center">
+        <img class="w-12" src="./img/Recycle-Bin-Full-Icon.png" alt="">
+        <span class="text-white text-sm font-thin">Recycle Bin</span>
+        </div>
+      </div>
+      <div id="Projects" class="w-24 h-24 flex items-center justify-center">
+       <div class="flex flex-col gap-1 text-center">
+        <img class="w-12" src="./img/open-folder.png" alt="">
+        <span class="text-white text-sm font-thin">My Projects</span>
+       </div>
+      </div>
+    </div>
+    <div id="myProjects" class="hidden w-[900px] h-[500px] ml-80 relative bottom-24   bg-white  ">
+
+    </div>
+    <div id="SideBar" class="hidden  fixed top-[10%] h-[85%] w-[40%] bg-[#2b2b2b]  ">
+    <div class="h-full flex">
+      <div class="flex flex-col justify-between w-[50px] shadow-md h-full  px-4 py-5">
+        <span><i class="fa-solid fa-bars text-white"></i></span>
+        <div class="flex flex-col gap-5">
+          <span><i class="fa-solid fa-circle-user text-white"></i></span>
+          <span><i class="fa-solid fa-file text-white"></i></span>
+          <span><i class="fa-solid fa-image text-white"></i></span>
+          <span><i class="fa-solid fa-gear text-white"></i></span>
+          <span><i class="fa-solid fa-power-off text-white"></i></span>
+        </div>
+      </div>
+      <div class="text-white py-5 px-5 text-sm flex flex-col gap-5 w-[300px] shadow-md">
+        <span>#</span>
+        <div class="flex flex-col gap-2"> 
+          <span class="flex items-center"><i class="fa-solid fa-folder text-yellow-400 text-2xl mr-2"></i> <span class="text-xs">My Projects</span></span>
+          <span class="text-xs flex items-center"><i class="fa-brands fa-xbox text-green-400 text-2xl mr-2"></i> <span>Xbox</span></span>
+        </div>
+        <div class="flex flex-col gap-3">
+          <span>C</span>
+          <div class="flex flex-col gap-2 ">
+            <span class="flex items-center gap-2 text-xs"><i class="fa-solid fa-calculator text-2xl"></i><span>calculator</span></span>
+            <span class="flex items-center gap-2 text-xs"><i class="fa-solid fa-calendar text-blue-500 text-2xl"></i><span>Calendar</span></span>
+            <span class="flex items-center gap-2 text-xs"><i class="fa-solid fa-camera text-gray-500  text-2xl"></i><span>Camera</span></span>
+            <span class="flex items-center gap-2 text-xs"><i class="fa-solid fa-clock text-gray-500  text-2xl"></i><span>Clock</span></span>
+
+          </div>
+        </div>
+        <div class="flex flex-col gap-3">
+          <span>M</span>
+          <div class="flex flex-col gap-2 ">
+            <span class="flex items-center gap-2 text-xs"><i class="fa-solid fa-envelope text-blue-400 text-2xl"></i><span>Mail</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <div class=" fixed w-full h-full top-0  left-0" id="loader">
+      <video class="w-[100%] h-[100vh] object-cover z-50"  autoplay muted playsinline id="loadingVideo">
+        <source src="./img/WhatsApp Video 2025-10-02 at 2.39.17 AM.mp4" type="video/mp4">
+      </video>
+    </div>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>  
