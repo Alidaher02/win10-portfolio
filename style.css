@@ -1,0 +1,32 @@
+.press {
+  border: 3px solid #0078d7; /* Windows blue */
+  background-color: rgba(0, 120, 215, 0.2); /* light blue highlight */
+  border-radius: 5px;
+}
+.mini{
+ width: 60%;
+ margin-top: 50px;
+ height: 450px;
+ 
+}
+.maxMize{
+position: fixed;
+z-index: 999;
+width: 100%;
+margin-top: 0px;
+height: 100%;
+
+
+}
+
+.taskPress{
+  background: gray;
+}
+
+.taskMax{
+height: 600px;
+}
+
+.min{
+  height: 300px;
+}
